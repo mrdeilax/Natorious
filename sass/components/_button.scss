@@ -29,6 +29,11 @@
       background-color: $color-white;
       color: $color-grey-dark;
     }
+
+    &--primary {
+      background-color: $color-primary;
+      color: $color-white;
+    }
   
     // &::after {
     //   content: "";
@@ -45,6 +50,7 @@
     &--white::after {
       background-color: $color-white;
     }
+
   
     &--animated {
       animation: moveInBottom 0.5s ease-in 0.75s;
