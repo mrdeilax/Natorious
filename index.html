@@ -91,21 +91,26 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <img
-                src="public/img/nat-1-large.jpg"
-                alt="picture of nature"
+
+              <img 
+                srcset="public/img/nat-1.jpg 300w, public/img/nat-1-large.jpg 1000w" 
+                alt=alt="picture of nature" 
                 class="composition__photo composition__photo--p1"
-              />
-              <img
-                src="public/img/nat-2-large.jpg"
-                alt="picture of nature"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+              >
+              <img 
+                srcset="public/img/nat-2.jpg 300w, public/img/nat-2-large.jpg 1000w" 
+                alt=alt="picture of nature" 
                 class="composition__photo composition__photo--p2"
-              />
-              <img
-                src="public/img/nat-3-large.jpg"
-                alt="picture of nature"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+              >
+              <img 
+                srcset="public/img/nat-3.jpg 300w, public/img/nat-3-large.jpg 1000w" 
+                alt=alt="picture of nature" 
                 class="composition__photo composition__photo--p3"
-              />
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+              >
+
             </div>
           </div>
         </div>
@@ -384,7 +389,12 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="/public/img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+        <picture class="footer__logo">
+          <source srcset="/public/img/logo-green-small-1x.png 1x, /public/img/logo-green-small-2x.png x," media="(max-width: 37.5em)">
+            <img srcset="/public/img/logo-green-small-1x.png 1x, /public/img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+        </picture>
+
       </div>
       <div class="row">
         <div class="col-1-of-2">
